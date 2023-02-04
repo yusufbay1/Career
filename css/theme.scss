@@ -327,3 +327,63 @@ a {
         padding: 2px;
     }
 }
+
+.design-end {
+    position: absolute;
+    top: 55px;
+    left: 95px;
+    border-radius: 5px;
+    background-color: #fff;
+    width: 50%;
+    padding: 20px;
+    z-index: 2;
+    h5 {
+        line-height: 1.25;
+    }
+    .end-close {
+        position: absolute;
+        right: 5px;
+        top: 5px;
+        border: 1px solid #ecebf6;
+        border-radius: 50%;
+        padding: 5px;
+        width: 15px;
+        height: 15px;
+        text-align: center;
+    }
+    .end-input {
+        button,
+        input {
+            width: 200px;
+            height: 20px;
+            padding: 15px;
+            font-size: 13px;
+            border-radius: 2px;
+        }
+        input {
+            margin-bottom: 1rem;
+            &:focus,
+            &:active {
+                outline: 0;
+            }
+            border: 1px solid $color-c1;
+        }
+        button{
+            color: #fff;
+            background-color: $color-c2;
+            line-height: 5px;
+
+        }
+    }
+}
+
+.design-end-border {
+    position: absolute;
+    background-color: $color-c2;
+    height: 120px;
+    right: 64px;
+    width: 150px;
+    bottom: 40px;
+    z-index: 1;
+    border-radius: 5px;
+}
