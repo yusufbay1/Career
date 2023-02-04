@@ -3,28 +3,28 @@ body {
   font-family: "Poppins", sans-serif; }
 
 .bg-c1 {
-  background-color: #ecebf6; }
+  background-color: #ecebf6 !important; }
 
 .bg-c2 {
-  background-color: #272c48; }
+  background-color: #272c48 !important; }
 
 .bg-c3 {
-  background-color: #d4357d; }
+  background-color: #d4357d !important; }
 
 .bg-c4 {
-  background-color: #8a8ba1; }
+  background-color: #8a8ba1 !important; }
 
 .bg-c5 {
-  background-color: #ecb332; }
+  background-color: #ecb332 !important; }
 
 .bg-c6 {
-  background-color: #27b8bf; }
+  background-color: #27b8bf !important; }
 
 .bg-c7 {
-  background-color: #f4e3e9; }
+  background-color: #f4e3e9 !important; }
 
 .bg-c8 {
-  background-color: #edf2fe; }
+  background-color: #edf2fe !important; }
 
 .text-c1 {
   color: #ecebf6; }
@@ -61,6 +61,9 @@ body {
 
 .mb-50 {
   margin-bottom: 150px; }
+
+.bx-none {
+  box-shadow: none !important; }
 
 a {
   text-decoration: none; }
@@ -207,5 +210,58 @@ a {
     height: 20px; }
   .card small {
     font-size: 6px; }
+
+.input-div {
+  background-color: #31365d; }
+  .input-div p {
+    color: white; }
+  .input-div .input-border {
+    border-bottom: 1px solid #000; }
+
+.theme-switch {
+  display: inline-block;
+  height: 12px;
+  position: relative;
+  width: 20px; }
+  .theme-switch input {
+    display: none; }
+  .theme-switch .slider {
+    background-color: #ccc;
+    bottom: 0;
+    cursor: pointer;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transition: 0.4s; }
+    .theme-switch .slider::before {
+      background-color: #fff;
+      bottom: 0.1rem;
+      content: "";
+      width: 9px;
+      height: 9px;
+      left: 0.1rem;
+      position: absolute;
+      transition: 0.4s; }
+    .theme-switch .slider.round {
+      border-radius: 34px; }
+    .theme-switch .slider.round:before {
+      border-radius: 50%; }
+  .theme-switch input:checked + .slider {
+    background-color: #27b8bf; }
+  .theme-switch input:checked + .slider:before {
+    transform: translateX(26px);
+    bottom: 0.1rem;
+    left: -1rem; }
+
+.design-middle {
+  position: relative; }
+  .design-middle .setting-icon {
+    position: absolute;
+    right: 24px;
+    top: 0;
+    border: 1px solid #d6d6d6;
+    background: white;
+    padding: 2px; }
 
 /*# sourceMappingURL=theme.css.map */
