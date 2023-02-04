@@ -12,29 +12,28 @@ body {
     font-family: $font-family;
 }
 .bg-c1 {
-    background-color: $color-c1;
+    background-color: $color-c1 !important;
 }
 .bg-c2 {
-    background-color: $color-c2;
+    background-color: $color-c2 !important;
 }
 .bg-c3 {
-    background-color: $color-c3;
+    background-color: $color-c3 !important;
 }
 .bg-c4 {
-    background-color: $color-c4;
+    background-color: $color-c4 !important;
 }
 .bg-c5 {
-    background-color: $color-c5;
+    background-color: $color-c5 !important;
 }
 .bg-c6 {
-    background-color: $color-c6;
+    background-color: $color-c6 !important;
 }
 .bg-c7 {
-    background-color: $color-c7;
+    background-color: $color-c7 !important;
 }
-
-.bg-c8{
-    background-color:$color-c8;
+.bg-c8 {
+    background-color: $color-c8 !important;
 }
 
 .text-c1 {
@@ -76,6 +75,9 @@ body {
 }
 .mb-50 {
     margin-bottom: 150px;
+}
+.bx-none {
+    box-shadow: none !important;
 }
 a {
     text-decoration: none;
@@ -233,7 +235,7 @@ a {
     }
 }
 
-.btn-primary{
+.btn-primary {
     background-color: blue;
     border: 0;
 }
@@ -245,17 +247,83 @@ a {
     background-color: white;
     padding: 1.5rem;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-    p{
+    p {
         font-size: 8px;
     }
-    h4{
-        margin:0;
+    h4 {
+        margin: 0;
         font-size: 10px;
     }
-    button{
+    button {
         height: 20px;
     }
-    small{
+    small {
         font-size: 6px;
+    }
+}
+
+.input-div {
+    background-color: #31365d;
+    p {
+        color: white;
+    }
+    .input-border {
+        border-bottom: 1px solid #000;
+    }
+}
+
+.theme-switch {
+    display: inline-block;
+    height: 12px;
+    position: relative;
+    width: 20px;
+    input {
+        display: none;
+    }
+    .slider {
+        background-color: #ccc;
+        bottom: 0;
+        cursor: pointer;
+        left: 0;
+        position: absolute;
+        right: 0;
+        top: 0;
+        transition: 0.4s;
+        &::before {
+            background-color: #fff;
+            bottom: 0.1rem;
+            content: "";
+            width: 9px;
+            height: 9px;
+            left: 0.1rem;
+            position: absolute;
+            transition: 0.4s;
+        }
+        &.round {
+            border-radius: 34px;
+        }
+        &.round:before {
+            border-radius: 50%;
+        }
+    }
+    input:checked + .slider {
+        background-color: $color-c6;
+    }
+    input:checked + .slider:before {
+        transform: translateX(26px);
+        bottom: 0.1rem;
+        left: -1rem;
+    }
+}
+
+.design-middle {
+    position: relative;
+    .setting-icon {
+        position: absolute;
+        right: 24px;
+        top: 0;
+        border: 1px solid #d6d6d6;
+        background: white;
+        padding: 2px;
     }
 }
