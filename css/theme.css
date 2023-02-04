@@ -1,7 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
 body {
-  font-family: "Poppins", sans-serif;
-  background-color: #8a8ba1; }
+  font-family: "Poppins", sans-serif; }
 
 .bg-c1 {
   background-color: #ecebf6; }
@@ -23,6 +22,9 @@ body {
 
 .bg-c7 {
   background-color: #f4e3e9; }
+
+.bg-c8 {
+  background-color: #edf2fe; }
 
 .text-c1 {
   color: #ecebf6; }
@@ -80,29 +82,36 @@ a {
   color: #272c48;
   font-size: 18px; }
 
-#navigation .category-level > ul, #navigation-small .category-level > ul {
+#navigation .category-level > ul,
+#navigation-small .category-level > ul {
   display: flex;
   list-style: none; }
-  #navigation .category-level > ul > li, #navigation-small .category-level > ul > li {
+  #navigation .category-level > ul > li,
+  #navigation-small .category-level > ul > li {
     border-radius: 30px;
     padding: 10px;
     margin-right: 5px; }
-    #navigation .category-level > ul > li:hover, #navigation-small .category-level > ul > li:hover {
+    #navigation .category-level > ul > li:hover,
+    #navigation-small .category-level > ul > li:hover {
       background-color: #ecebf6; }
-    #navigation .category-level > ul > li > a, #navigation-small .category-level > ul > li > a {
+    #navigation .category-level > ul > li > a,
+    #navigation-small .category-level > ul > li > a {
       position: relative;
       text-align: center;
       color: #272c48;
       font-size: 13px;
       font-weight: 500;
       white-space: nowrap; }
-    #navigation .category-level > ul > li:nth-child(1), #navigation-small .category-level > ul > li:nth-child(1) {
+    #navigation .category-level > ul > li:nth-child(1),
+    #navigation-small .category-level > ul > li:nth-child(1) {
       background-color: #ecebf6; }
-      #navigation .category-level > ul > li:nth-child(1) > a, #navigation-small .category-level > ul > li:nth-child(1) > a {
+      #navigation .category-level > ul > li:nth-child(1) > a,
+      #navigation-small .category-level > ul > li:nth-child(1) > a {
         color: #000; }
 
 .user > a {
-  font-size: 13px; }
+  font-size: 13px;
+  font-weight: 600; }
 .user .user-login {
   margin-right: 10px; }
 .user .user-signup {
@@ -145,7 +154,10 @@ a {
   position: relative; }
   .free-desing .sub-design .desing-content {
     border-radius: 20px;
-    height: 250px; }
+    height: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
     .free-desing .sub-design .desing-content .diamond-icon > i {
       position: absolute;
       top: 20px;
@@ -174,5 +186,26 @@ a {
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     color: #000;
     font-weight: 600; }
+
+.btn-primary {
+  background-color: blue;
+  border: 0; }
+
+.card {
+  display: inline-block;
+  width: 60%;
+  border-radius: 3px;
+  background-color: white;
+  padding: 1.5rem;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; }
+  .card p {
+    font-size: 8px; }
+  .card h4 {
+    margin: 0;
+    font-size: 10px; }
+  .card button {
+    height: 20px; }
+  .card small {
+    font-size: 6px; }
 
 /*# sourceMappingURL=theme.css.map */
