@@ -223,7 +223,7 @@ a {
 .free-desing .sub-design {
   position: relative; }
   .free-desing .sub-design.is-hidden {
-    visibility: hidden; }
+    display: none; }
   .free-desing .sub-design .desing-content {
     border-radius: 20px;
     height: 350px;
