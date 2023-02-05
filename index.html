@@ -13,14 +13,17 @@
 <body class="">
     <div class="p-3 bg-white ct-bordr">
         <div class="row align-items-center px-4 header">
-            <div class="col col-xl-3">
+            <div class="col-6 col-xl-3">
                 <div class="d-flex ui-design align-items-center">
                     <p class="ui bg-c2 text-white text-center">UI</p>
                     <p class="design-daily">Design Daily</p>
                 </div>
             </div>
-            <div class="col col-xl-6">
+            <div class="col-6 col-xl-6">
                 <nav id="navigation">
+                    <a href="" id="nav-bar">
+                        <i class="fas fa-bars"></i>
+                    </a>
                     <div class="category-level">
                         <ul>
                             <li><a href="#">Free designs</a> </li>
@@ -49,25 +52,30 @@
             <h3 class="text-center p-info">
                 Free UI resources for everyone
                 <p class="mt-3">The largest database of 100% free UI companents and designs
-                    avaible in the formats popular by UI desingers</p>
+                    avaible in the formats popular by UI desingers
+                </p>
             </h3>
             <div class="mt-4 d-flex justify-content-center w-100">
                 <form action="" id="serch-form">
                     <div class="search-div d-flex align-items-center">
-                        <select name="" id="" class="search-select">
-                            <option value="">Free design</option>
-                            <option value="">Two</option>
-                            <option value="">There</option>
-                            <option value="">Four</option>
-                        </select>
-                        <div class="icon-search">
-                            <svg width="23.591" height="24.435" viewBox="0 0 23.591 24.435">
-                                <path id="icon-search"
-                                    d="M24.217,22.257,18.4,16.208a9.862,9.862,0,1,0-7.551,3.523A9.76,9.76,0,0,0,16.5,17.946l5.86,6.094a1.287,1.287,0,1,0,1.855-1.784ZM10.85,2.574A7.292,7.292,0,1,1,3.558,9.866,7.3,7.3,0,0,1,10.85,2.574Z"
-                                    transform="translate(-0.984)" fill="#8A8BA1"></path>
-                            </svg>
+                        <div class="d-flex justify-content-center">
+                            <select name="" id="" class="search-select">
+                                <option value="">Free design</option>
+                                <option value="">Two</option>
+                                <option value="">There</option>
+                                <option value="">Four</option>
+                            </select>
                         </div>
-                        <input type="text" class="search-input" placeholder="Search">
+                        <div class="d-flex justify-content-center">
+                            <div class="icon-search">
+                                <svg width="23.591" height="24.435" viewBox="0 0 23.591 24.435">
+                                    <path id="icon-search"
+                                        d="M24.217,22.257,18.4,16.208a9.862,9.862,0,1,0-7.551,3.523A9.76,9.76,0,0,0,16.5,17.946l5.86,6.094a1.287,1.287,0,1,0,1.855-1.784ZM10.85,2.574A7.292,7.292,0,1,1,3.558,9.866,7.3,7.3,0,0,1,10.85,2.574Z"
+                                        transform="translate(-0.984)" fill="#8A8BA1"></path>
+                                </svg>
+                            </div>
+                            <input type="text" class="search-input w-100" placeholder="Search" id="searchbox">
+                        </div>
                     </div>
                 </form>
             </div>
@@ -75,8 +83,8 @@
 
         <div class="design-bar mb-5 px-4">
             <div class="row">
-                <div class="col-4">
-                    <div class="d-flex align-items-center">
+                <div class="col-md-4 col-sm-6">
+                    <div class="d-flex align-items-center first">
                         <div class="first-link">
                             <a href="#">
                                 Latest
@@ -87,7 +95,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-3">
+                <div class="col-md-5 col-sm-6">
                     <nav id="navigation-small">
                         <div class="category-level">
                             <ul>
@@ -100,7 +108,105 @@
                         </div>
                     </nav>
                 </div>
-                <div class="col-5"></div>
+                <div class="col-3 d-flex justify-content-end px-4 svg-none">
+                    <div class="row row-cols-5 align-items-center">
+                        <div class="svg-icon">
+                            <svg width="28" height="42" viewBox="0 0 28 42" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="21" cy="21" r="7" fill="#1ABCFE" />
+                                <path
+                                    d="M14 14H7C3.13401 14 4.76837e-07 17.134 4.76837e-07 21V21C4.76837e-07 24.866 3.13401 28 7 28H14V14Z"
+                                    fill="#A259FF" />
+                                <path
+                                    d="M14 28H7C3.13401 28 4.76837e-07 31.134 4.76837e-07 35V35C4.76837e-07 38.866 3.14765 42 7.01365 42V42C10.8646 42 14 38.8782 14 35.0272V28Z"
+                                    fill="#0ACF83" />
+                                <path
+                                    d="M14 0H7C3.13401 0 4.76837e-07 3.13401 4.76837e-07 7V7C4.76837e-07 10.866 3.13401 14 7 14H14V0Z"
+                                    fill="#F24E1E" />
+                                <path d="M14 0H21C24.866 0 28 3.13401 28 7V7C28 10.866 24.866 14 21 14H14V0Z"
+                                    fill="#FF7262" />
+                            </svg>
+
+                        </div>
+                        <div class="svg-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 394 356">
+                                <g fill="none">
+                                    <path fill="#FDB300"
+                                        d="M85.790323 11.7151549 196.602823 0l110.8125 11.7151549 85.790322 115.1659291-196.602822 228.941925L0 126.881084z" />
+                                    <path fill="#EA6C00" d="m79.634 126.881084 116.969 228.942L0 126.881084z" />
+                                    <path fill="#EA6C00" d="m313.571468 126.881084-116.969 228.942 196.603-228.942z" />
+                                    <path fill="#FDAD00" d="M79.634 126.881084h233.938l-116.969 228.942z" />
+                                    <path fill="#FDD231" d="M196.603 0 85.79 11.715l-6.156 115.166z" />
+                                    <path fill="#FDD231" d="m196.602396 0 110.813 11.715 6.156 115.166z" />
+                                    <path fill="#FDAD00"
+                                        d="m393.205968 126.881-85.791-115.166 6.157 115.166zM0 126.881 85.79 11.715l-6.156 115.166z" />
+                                    <path fill="#FEEEB7" d="M196.603 0 79.634 126.881h233.938z" />
+                                </g>
+                            </svg>
+                        </div>
+                        <div class="svg-icon">
+                            <svg viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg"
+                                preserveAspectRatio="xMinYMin meet">
+                                <path
+                                    d="M232.793 0H23.207C10.39 0 0 10.39 0 23.207v209.586C0 245.61 10.39 256 23.207 256h209.586C245.61 256 256 245.61 256 232.793V23.207C256 10.39 245.61 0 232.793 0"
+                                    fill="#DC395F" />
+                                <path
+                                    d="M85.555 80.545c8.51 0 15.639-6.67 15.639-15.412 0-8.736-7.129-15.405-15.639-15.405s-15.637 6.669-15.637 15.405c0 8.741 7.127 15.412 15.637 15.412M53.129 163.065c-.919 3.91-1.38 8.132-1.38 11.576 0 13.571 7.359 22.58 22.998 22.58 12.97 0 23.485-7.702 31.056-20.139l-4.623 18.553h25.755l14.72-59.039c3.68-14.948 10.809-22.707 21.619-22.707 8.509 0 13.798 5.292 13.798 14.028 0 2.531-.23 5.288-1.15 8.279l-7.59 27.137c-1.15 3.91-1.608 7.822-1.608 11.499 0 12.883 7.587 22.306 23.456 22.306 13.569 0 24.377-8.735 30.357-29.664l-10.118-3.906c-5.06 14.021-9.43 16.556-12.88 16.556-3.45 0-5.29-2.298-5.29-6.895 0-2.07.462-4.367 1.15-7.133l7.361-26.438c1.839-6.208 2.53-11.713 2.53-16.771 0-19.778-11.96-30.1-26.448-30.1-13.568 0-27.368 12.239-34.266 25.12l5.058-23.12H108.31l-5.52 20.364h18.399l-11.33 45.36c-8.897 19.778-25.24 20.099-27.291 19.64-3.368-.76-5.522-2.039-5.522-6.415 0-2.525.46-6.152 1.61-10.525l17.25-68.424H52.21l-5.52 20.364h18.167L53.13 163.065"
+                                    fill="#FFF" />
+                            </svg>
+                        </div>
+                        <div class="svg-icon">
+                            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                                xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 240 234"
+                                style="enable-background:new 0 0 240 234;" xml:space="preserve">
+
+                                <g id="Layer_2_1_">
+                                    <g id="Surfaces">
+                                        <g id="UI_UX_Surface">
+                                            <g id="Outline_no_shadow">
+                                                <path class="st0"
+                                                    d="M42.5,0h155C221,0,240,19,240,42.5v149c0,23.5-19,42.5-42.5,42.5h-155C19,234,0,215,0,191.5v-149C0,19,19,0,42.5,0z" />
+                                            </g>
+                                        </g>
+                                    </g>
+                                    <g id="Outlined_Mnemonics_Logos">
+                                        <g id="Xd">
+                                            <path class="st1"
+                                                d="M126.2,61.5L96.2,111l32,52.5c0.2,0.4,0.3,0.8,0.2,1.2c-0.1,0.4-0.5,0.1-1.1,0.2h-22.9c-1.6,0-2.7-0.1-3.4-1.1c-2.1-4.2-4.3-8.3-6.4-12.5c-2.1-4.1-4.4-8.3-6.8-12.6c-2.4-4.3-4.8-8.6-7.2-13h-0.2c-2.1,4.3-4.4,8.6-6.7,12.9c-2.3,4.3-4.6,8.6-6.8,12.8c-2.3,4.2-4.6,8.5-6.9,12.6c-0.4,1-1.2,1.1-2.3,1.1H35.7c-0.4,0-0.7,0.2-0.7-0.3c-0.1-0.4,0-0.8,0.2-1.1l31.1-51L36,61.4c-0.3-0.4-0.4-0.8-0.2-1c0.2-0.3,0.6-0.4,1-0.4h22.7c0.5,0,1,0.1,1.4,0.2c0.4,0.2,0.7,0.5,1,0.9c1.9,4.3,4.1,8.6,6.4,12.9c2.4,4.3,4.7,8.5,7.2,12.7c2.4,4.2,4.6,8.4,6.7,12.7h0.2c2.1-4.4,4.3-8.7,6.5-12.9c2.2-4.2,4.5-8.4,6.8-12.6c2.3-4.2,4.5-8.5,6.7-12.6c0.1-0.4,0.3-0.8,0.6-1c0.4-0.2,0.8-0.3,1.3-0.2h21.1c0.5-0.1,1,0.2,1.1,0.7C126.6,60.9,126.4,61.3,126.2,61.5L126.2,61.5z" />
+                                            <path class="st1"
+                                                d="M172.4,167c-7.4,0.1-14.8-1.4-21.5-4.5c-6.3-2.9-11.5-7.7-15.1-13.6c-3.7-6.1-5.5-13.7-5.5-22.8c-0.1-7.4,1.8-14.7,5.5-21.1c3.8-6.5,9.3-11.9,15.9-15.5c7-3.9,15.4-5.8,25.3-5.8c0.5,0,1.2,0,2.1,0.1c0.9,0.1,1.9,0.1,3.1,0.2V52.4c0-0.7,0.3-1.1,1-1.1h20.3c0.5-0.1,0.9,0.3,1,0.7c0,0.1,0,0.2,0,0.2v95.2c0,1.8,0.1,3.8,0.2,6c0.2,2.1,0.3,4.1,0.4,5.8c0,0.7-0.3,1.3-1,1.6c-5.2,2.2-10.7,3.8-16.3,4.8C182.7,166.5,177.6,167,172.4,167z M182.2,147v-44c-0.9-0.2-1.8-0.4-2.7-0.5c-1.1-0.1-2.2-0.2-3.3-0.2c-3.9,0-7.8,0.8-11.3,2.6c-3.4,1.7-6.3,4.2-8.5,7.4c-2.2,3.2-3.3,7.5-3.3,12.7c-0.1,3.5,0.5,7,1.7,10.3c1,2.7,2.5,5.1,4.5,7.1c1.9,1.8,4.2,3.2,6.8,4c2.7,0.9,5.5,1.3,8.3,1.3c1.5,0,2.9-0.1,4.2-0.2C179.9,147.6,181,147.4,182.2,147z" />
+                                        </g>
+                                    </g>
+                                </g>
+                            </svg>
+                        </div>
+                        <div class="svg-icon">
+                            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                                xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 240 234"
+                                style="enable-background:new 0 0 240 234;" xml:space="preserve">
+                                <g id="Layer_2_1_">
+                                    <g id="Surfaces">
+                                        <g id="Photo_Surface">
+                                            <g id="Outline_no_shadow">
+                                                <path class="st0"
+                                                    d="M42.5,0h155C221,0,240,19,240,42.5v149c0,23.5-19,42.5-42.5,42.5h-155C19,234,0,215,0,191.5v-149C0,19,19,0,42.5,0z" />
+                                            </g>
+                                        </g>
+                                    </g>
+                                    <g id="Outlined_Mnemonics_Logos">
+                                        <g id="Ps">
+                                            <path class="st1"
+                                                d="M54,164.1V61.2c0-0.7,0.3-1.1,1-1.1c1.7,0,3.3,0,5.6-0.1c2.4-0.1,4.9-0.1,7.6-0.2c2.7-0.1,5.6-0.1,8.7-0.2c3.1-0.1,6.1-0.1,9.1-0.1c8.2,0,15,1,20.6,3.1c5,1.7,9.6,4.5,13.4,8.2c3.2,3.2,5.7,7.1,7.3,11.4c1.5,4.2,2.3,8.5,2.3,13c0,8.6-2,15.7-6,21.3c-4,5.6-9.6,9.8-16.1,12.2c-6.8,2.5-14.3,3.4-22.5,3.4c-2.4,0-4,0-5-0.1c-1-0.1-2.4-0.1-4.3-0.1v32.1c0.1,0.7-0.4,1.3-1.1,1.4c-0.1,0-0.2,0-0.4,0H55.2C54.4,165.4,54,165,54,164.1z M75.8,79.4V113c1.4,0.1,2.7,0.2,3.9,0.2H85c3.9,0,7.8-0.6,11.5-1.8c3.2-0.9,6-2.8,8.2-5.3c2.1-2.5,3.1-5.9,3.1-10.3c0.1-3.1-0.7-6.2-2.3-8.9c-1.7-2.6-4.1-4.6-7-5.7c-3.7-1.5-7.7-2.1-11.8-2c-2.6,0-4.9,0-6.8,0.1C77.9,79.2,76.5,79.3,75.8,79.4L75.8,79.4z" />
+                                            <path class="st1"
+                                                d="M192,106.9c-3-1.6-6.2-2.7-9.6-3.4c-3.7-0.8-7.4-1.3-11.2-1.3c-2-0.1-4.1,0.2-6,0.7c-1.3,0.3-2.4,1-3.1,2c-0.5,0.8-0.8,1.8-0.8,2.7c0,0.9,0.4,1.8,1,2.6c0.9,1.1,2.1,2,3.4,2.7c2.3,1.2,4.7,2.3,7.1,3.3c5.4,1.8,10.6,4.3,15.4,7.3c3.3,2.1,6,4.9,7.9,8.3c1.6,3.2,2.4,6.7,2.3,10.3c0.1,4.7-1.3,9.4-3.9,13.3c-2.8,4-6.7,7.1-11.2,8.9c-4.9,2.1-10.9,3.2-18.1,3.2c-4.6,0-9.1-0.4-13.6-1.3c-3.5-0.6-7-1.7-10.2-3.2c-0.7-0.4-1.2-1.1-1.1-1.9v-17.4c0-0.3,0.1-0.7,0.4-0.9c0.3-0.2,0.6-0.1,0.9,0.1c3.9,2.3,8,3.9,12.4,4.9c3.8,1,7.8,1.5,11.8,1.5c3.8,0,6.5-0.5,8.3-1.4c1.6-0.7,2.7-2.4,2.7-4.2c0-1.4-0.8-2.7-2.4-4c-1.6-1.3-4.9-2.8-9.8-4.7c-5.1-1.8-9.8-4.2-14.2-7.2c-3.1-2.2-5.7-5.1-7.6-8.5c-1.6-3.2-2.4-6.7-2.3-10.2c0-4.3,1.2-8.4,3.4-12.1c2.5-4,6.2-7.2,10.5-9.2c4.7-2.4,10.6-3.5,17.7-3.5c4.1,0,8.3,0.3,12.4,0.9c3,0.4,5.9,1.2,8.6,2.3c0.4,0.1,0.8,0.5,1,0.9c0.1,0.4,0.2,0.8,0.2,1.2v16.3c0,0.4-0.2,0.8-0.5,1C192.9,107.1,192.4,107.1,192,106.9z" />
+                                        </g>
+                                    </g>
+                                </g>
+                            </svg>
+
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
 
@@ -138,8 +244,18 @@
                                 </div>
                             </div>
                         </div>
-                        <div>
-
+                    </div>
+                    <div class="row mt-2">
+                        <div class="col-6">
+                            <div class="row">
+                                <div class="col"><i class="fas fa-user-circle mx-2"></i>by Yusuf Hangün</div>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="row">
+                                <div class="col" style="text-align: end;"><i class="fas fa-code mx-2"></i>25 <span
+                                        class="ms-4"><i class="fas fa-praying-hands mx-2"></i>25</span></div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -192,7 +308,7 @@
                                 <div class="col-6">
                                     <div class="p-1 input-div design-middle">
 
-                                      
+
                                         <div class="input-border">
 
                                             <div class="input-div" class="input-border">
@@ -233,6 +349,19 @@
                             </div>
                         </div>
                     </div>
+                    <div class="row mt-2">
+                        <div class="col-6">
+                            <div class="row">
+                                <div class="col"><i class="fas fa-user-circle mx-2"></i>by Yusuf Hangün</div>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="row">
+                                <div class="col" style="text-align: end;"><i class="fas fa-code mx-2"></i>25 <span
+                                        class="ms-4"><i class="fas fa-praying-hands mx-2"></i>25</span></div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div class="sub-design mb-4">
                     <div class="desing-content bg-c7">
@@ -240,7 +369,7 @@
                         <div class="design-end">
                             <div class="">
                                 <i class="fas fa-times end-close"></i>
-                                <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit ratione  porro. </h5>
+                                <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit ratione porro. </h5>
                                 <div class="end-input">
                                     <input type="text" placeholder="Lorem lorem">
                                     <button> Lorem, ipsum.</button>
@@ -248,6 +377,19 @@
                             </div>
                         </div>
                         <div class="design-end-border"></div>
+                    </div>
+                    <div class="row mt-2">
+                        <div class="col-6">
+                            <div class="row">
+                                <div class="col"><i class="fas fa-user-circle mx-2"></i>by Yusuf Hangün</div>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="row">
+                                <div class="col" style="text-align: end;"><i class="fas fa-code mx-2"></i>25 <span
+                                        class="ms-4"><i class="fas fa-praying-hands mx-2"></i>25</span></div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
