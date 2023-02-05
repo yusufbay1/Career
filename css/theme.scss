@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+@import "mixin";
 $font-family: "Poppins", sans-serif;
 $color-c1: #ecebf6;
 $color-c2: #272c48;
@@ -111,6 +112,7 @@ a {
         > ul {
             display: flex;
             list-style: none;
+            justify-content: center;
             > li {
                 border-radius: 30px;
                 padding: 10px;
@@ -136,6 +138,92 @@ a {
         }
     }
 }
+
+#navigation {
+    #nav-bar {
+        display: none;
+        @include max($md) {
+            display: block;
+            text-align: end;
+            font-size: 25px;
+        }
+    }
+    .category-level {
+        > ul {
+            @include max($md) {
+                position: fixed;
+                top: 85px;
+                right: 0;
+                background: #fff;
+                z-index: 10;
+                overflow: hidden;
+                overflow-y: auto;
+                height: 100%;
+                -webkit-transition: all 0.5s ease;
+                -moz-transition: position 10s;
+                -ms-transition: position 10s;
+                -o-transition: position 10s;
+                transform: translateX(100%);
+                transition: transform 0.75s cubic-bezier(0.19, 1, 0.22, 1);
+                width: 93%;
+                padding: 20px;
+                display: block;
+                background: #000;
+
+                > li {
+                    &:nth-child(5) {
+                        margin-bottom: 1.5rem;
+                    }
+                    > a {
+                        color: #fff;
+                    }
+                }
+                .user-login,
+                .user-signup {
+                    color: white;
+                    padding: 10px !important;
+                }
+            }
+            &.active {
+                transform: translateX(0%);
+            }
+        }
+    }
+}
+#navigation-small {
+    .category-level {
+        > ul {
+            @include max($md) {
+                padding-left: 0;
+            }
+        }
+    }
+}
+
+.header {
+    .user {
+        @include max($md) {
+            display: none !important;
+        }
+    }
+    &.sticky {
+        @include max($md) {
+            position: fixed !important;
+            top: 0;
+            right: 0;
+            left: 0;
+            z-index: 11;
+            background-color: white;
+            #navigation {
+                .category-level {
+                    > ul {
+                        margin-top: 0;
+                    }
+                }
+            }
+        }
+    }
+}
 .user {
     > a {
         font-size: 13px;
@@ -155,10 +243,17 @@ a {
         font-weight: normal;
         max-width: 35%;
         margin: auto;
+        @include max($md) {
+            max-width: 100%;
+        }
     }
 }
 #serch-form {
     width: 40%;
+    @include max($md) {
+        width: 100%;
+        display: flex;
+    }
 }
 .search-div {
     border: 1px solid #ecebf6;
@@ -172,6 +267,9 @@ a {
     border-left: 1px solid #ecebf6;
     margin-left: 5px;
     padding: 0 10px;
+    @include max($md) {
+        border: 0;
+    }
 }
 .search-select,
 .search-input {
@@ -181,12 +279,16 @@ a {
         outline: 0;
     }
 }
+
 .search-select {
     padding-right: 15px;
 }
 .free-desing {
     .sub-design {
         position: relative;
+        &.is-hidden{
+            visibility: hidden;
+        }
         .desing-content {
             border-radius: 20px;
             height: 350px;
@@ -249,6 +351,9 @@ a {
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     p {
         font-size: 8px;
+        @include max($xxs) {
+            font-size: 5px;
+        }
     }
     h4 {
         margin: 0;
@@ -337,8 +442,15 @@ a {
     width: 50%;
     padding: 20px;
     z-index: 2;
+    @include max($xxs) {
+        top: 75px;
+        left: 55px;
+    }
     h5 {
         line-height: 1.25;
+        @include max($xxs) {
+            font-size: 7px;
+        }
     }
     .end-close {
         position: absolute;
@@ -359,6 +471,9 @@ a {
             padding: 15px;
             font-size: 13px;
             border-radius: 2px;
+            @include max($xxs) {
+                width: 150px;
+            }
         }
         input {
             margin-bottom: 1rem;
@@ -368,11 +483,10 @@ a {
             }
             border: 1px solid $color-c1;
         }
-        button{
+        button {
             color: #fff;
             background-color: $color-c2;
             line-height: 5px;
-
         }
     }
 }
@@ -381,9 +495,58 @@ a {
     position: absolute;
     background-color: $color-c2;
     height: 120px;
-    right: 64px;
+    right: 70px;
     width: 150px;
-    bottom: 40px;
+    bottom: 70px;
     z-index: 1;
     border-radius: 5px;
+    @include max($xxs) {
+        right: 35px;
+        bottom: 115px;
+    }
+}
+.svg-icon {
+    text-align: center;
+    border: 1px solid #ecebf6;
+    border-radius: 50%;
+    padding: 10px;
+    width: 50px;
+    height: 46px;
+    margin: 5px;
+    svg {
+        width: 24px;
+        height: 24px;
+    }
+    &:nth-child(2) {
+        border: 1px solid $color-c3;
+    }
+    &:nth-child(4) {
+        .st0 {
+            fill: #470137;
+        }
+
+        .st1 {
+            fill: #ff61f6;
+        }
+    }
+    &:nth-child(5) {
+        .st0 {
+            fill: #001e36;
+        }
+
+        .st1 {
+            fill: #31a8ff;
+        }
+    }
+}
+
+.svg-none {
+    @include max($sm) {
+        display: none !important;
+    }
+}
+.first {
+    @include max($md) {
+        justify-content: center;
+    }
 }
