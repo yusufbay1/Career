@@ -287,7 +287,7 @@ a {
     .sub-design {
         position: relative;
         &.is-hidden{
-            visibility: hidden;
+           display: none;
         }
         .desing-content {
             border-radius: 20px;
@@ -550,3 +550,4 @@ a {
         justify-content: center;
     }
 }
+
